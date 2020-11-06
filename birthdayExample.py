@@ -15,7 +15,7 @@ import json
 #
 
 # relative path
-pathToFile = "C:\Users\ovanc\OneDrive\Documents\GitHub\Birthday-Lookup\birthday.json"
+pathToFile = "C:/Users/ovanc/OneDrive/Documents/GitHub/Birthday-Lookup/birthday.json"
 
 
 # try to open a file and throw a error if it is not found
@@ -38,15 +38,16 @@ for elem in birthdayList:
     name = elem["name"]
     birthday = elem["birthday"]
 
-    print("name = " + name)
-    print("birthday = " + birthday)
+    # print("name = " + name)
+    # print("birthday = " + birthday)
 
     birthdayDictionary[name] = birthday
 
 
 # to print a value in the dictionary by giving it a string with the name as the key
-print("Kylee Miller's birthday is: " + birthdayDictionary["Kylee Miller"])
+print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
 
 # to get user input
 name = input("Enter a name:")
 print("name = " + name)
+print("birthday = " + birthdayDictionary[name])
